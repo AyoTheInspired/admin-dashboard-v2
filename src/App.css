@@ -15,3 +15,13 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
+.others {
+	flex: 4;
+	background-color: red;
+}
+
+.sidebarIcon {
+	margin-right: 5px;
+	font-size: 20px !important;
+}
