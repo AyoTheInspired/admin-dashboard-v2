@@ -1,18 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {
-	LineStyle,
-	Timeline,
-	TrendingUp,
-	// Storefront,
-	// AttachMoney,
-	// Barchart,
-	// MailOutline,
-	// DynamicFeed,
-	// ChatBubbleOutline,
-	// WorkOutline,
-	// Report,
-} from "@material-ui/icons";
+
 import { sidebarItems } from "../appData";
 
 function Sidebar() {
