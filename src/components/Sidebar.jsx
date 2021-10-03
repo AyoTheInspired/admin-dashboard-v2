@@ -1,11 +1,42 @@
 import React from "react";
 import styled from "styled-components";
-import { LineStyle, Timeline, TrendingUp } from "@material-ui/icons";
+import {
+	LineStyle,
+	Timeline,
+	TrendingUp,
+	// Storefront,
+	// AttachMoney,
+	// Barchart,
+	// MailOutline,
+	// DynamicFeed,
+	// ChatBubbleOutline,
+	// WorkOutline,
+	// Report,
+} from "@material-ui/icons";
+import { sidebarItems } from "../appData";
 
 function Sidebar() {
 	return (
 		<Div>
 			<div className="sidebarWrapper">
+				{sidebarItems.map(({ id, title, subItems }) => (
+					<div key={id} className="sidebarMenu">
+						<h3 className="sidebarTitle"> {title} </h3>
+						<ul className="sidebarList">
+							{subItems.map((subItem) => {
+								const { Icon, text, selected } = subItem;
+								return (
+									<li
+										className={`${selected && "active"} sidebarListItem`}
+										key={text}>
+										<Icon className="sidebarIcon" /> {text}
+									</li>
+								);
+							})}
+						</ul>
+					</div>
+				))}
+
 				<div className="sidebarMenu">
 					<h3 className="sidebarTitle">Dashboard</h3>
 					<ul className="sidebarList">
