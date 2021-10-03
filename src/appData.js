@@ -2,14 +2,14 @@ import {
 	LineStyle,
 	Timeline,
 	TrendingUp,
-	// Storefront,
-	// AttachMoney,
-	// Barchart,
-	// MailOutline,
-	// DynamicFeed,
-	// ChatBubbleOutline,
-	// WorkOutline,
-	// Report,
+	Storefront,
+	AttachMoney,
+	BarChart,
+	MailOutline,
+	DynamicFeed,
+	ChatBubbleOutline,
+	WorkOutline,
+	Report,
 } from "@material-ui/icons";
 
 export const sidebarItems = [
@@ -27,35 +27,27 @@ export const sidebarItems = [
 		title: "Quick Menu",
 		subItems: [
 			{ Icon: LineStyle, text: "Users" },
-			{ Icon: Timeline, text: "Products" },
-			{ Icon: TrendingUp, text: "Transactions" },
+			{ Icon: Storefront, text: "Products" },
+			{ Icon: AttachMoney, text: "Transactions" },
+			{ Icon: BarChart, text: "Reports" },
 		],
 	},
 	{
 		id: 3,
 		title: "Notifications",
 		subItems: [
-			{ Icon: LineStyle, text: "Mail" },
-			{ Icon: Timeline, text: "Feedback" },
-			{ Icon: TrendingUp, text: "Messages" },
+			{ Icon: MailOutline, text: "Mail" },
+			{ Icon: DynamicFeed, text: "Feedback" },
+			{ Icon: ChatBubbleOutline, text: "Messages" },
 		],
 	},
 	{
-		id: 1,
-		title: "DashBoard",
+		id: 4,
+		title: "Staff",
 		subItems: [
-			{ Icon: LineStyle, text: "Home" },
+			{ Icon: WorkOutline, text: "Manage" },
 			{ Icon: Timeline, text: "Analytics" },
-			{ Icon: TrendingUp, text: "TrendingUp" },
-		],
-	},
-	{
-		id: 1,
-		title: "DashBoard",
-		subItems: [
-			{ Icon: LineStyle, text: "Home" },
-			{ Icon: Timeline, text: "Analytics" },
-			{ Icon: TrendingUp, text: "TrendingUp" },
+			{ Icon: Report, text: "Reports" },
 		],
 	},
 ];
