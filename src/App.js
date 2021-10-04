@@ -8,11 +8,9 @@ function App() {
 	return (
 		<div className="app">
 			<Header />
-			<div className="container flexed">
+			<div className="container flex">
 				<Sidebar />
 				<Home />
-
-				{/* <div className="others">other pages</div> */}
 			</div>
 		</div>
 	);

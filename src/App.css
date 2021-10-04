@@ -10,16 +10,15 @@
 	align-items: center;
 }
 
+.flex {
+	display: flex;
+}
+
 .flex-btw {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
-/* .others {
-	flex: 4;
-	background-color: red;
-} */
 
 .contianer {
 	margin-top: 10px;
