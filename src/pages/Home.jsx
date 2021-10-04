@@ -27,5 +27,6 @@ function Home() {
 export default Home;
 
 const Div = styled.div`
-	flex: 4;
+	width: 84%;
+	padding-top: 18px;
 `;

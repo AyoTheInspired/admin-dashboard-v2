@@ -21,7 +21,6 @@ function Header() {
 					<div className="topbarIconContainer">
 						<Settings />
 					</div>
-
 					<img src="/the_inspired.jpg" alt="" className="topAvatar" />
 				</div>
 			</div>
@@ -32,6 +31,7 @@ function Header() {
 export default Header;
 
 const Div = styled.div`
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 	position: sticky;
 	top: 0;
 	z-index: 500;

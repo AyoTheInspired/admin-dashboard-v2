@@ -31,7 +31,7 @@ function Sidebar() {
 export default Sidebar;
 
 const Div = styled.div`
-	flex: 1;
+	width: 16%;
 	height: calc(100vh - 50px);
 	position: sticky;
 	top: 50px;
