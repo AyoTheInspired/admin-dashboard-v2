@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
-import { sidebarItems } from "../appData";
+import { sidebarItems } from "../app-data/sidebar-items";
 
 function Sidebar() {
 	return (

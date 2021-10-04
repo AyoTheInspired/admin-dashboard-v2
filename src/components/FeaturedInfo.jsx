@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowDownward, ArrowUpward } from "@material-ui/icons";
 import styled from "styled-components";
-import { featuredItems } from "../appData";
+import { featuredItems } from "../app-data/featured-items";
 
 function FeaturedInfo() {
 	return (
