@@ -17,7 +17,6 @@ export const usersColumns = [
 		),
 		width: 180,
 	},
-	// { field: "username", headerName: "Username", width: 180 },
 	{ field: "email", headerName: "Email", width: 230 },
 	{
 		field: "status",
@@ -32,14 +31,13 @@ export const usersColumns = [
 
 	{
 		field: "action",
-		headerName: "Action",
+		headerName: "Actions",
+		sortable: false,
 		width: 150,
 		renderCell: (params) => (
-			<div>
+			<div className="flex-btw">
 				<button className="userEditBtn">Edit</button>
-				<button className="userDeleteBtn">
-					<DeleteOutline />
-				</button>
+				<DeleteOutline className="userDeleteBtn" />
 			</div>
 		),
 	},
@@ -51,7 +49,7 @@ export const usersRows = [
 		username: "Karlee Snow",
 		status: "active",
 		transaction: "$120.00",
-		avatar: "https://robohash.org/idestest.png?size=50x50&set=set1",
+		avatar: "/users/ayo.jpg",
 		email: "klandells0@technorati.com",
 	},
 	{
@@ -59,7 +57,7 @@ export const usersRows = [
 		username: "Dusty Snow",
 		status: "active",
 		transaction: "$120.00",
-		avatar: "https://robohash.org/eosexrecusandae.png?size=50x50&set=set1",
+		avatar: "/users/brian.jpg",
 		email: "dneicho1@networksolutions.com",
 	},
 	{
@@ -67,8 +65,7 @@ export const usersRows = [
 		username: "Harmony Snow",
 		status: "active",
 		transaction: "$120.00",
-		avatar:
-			"https://robohash.org/voluptatibusetpossimus.png?size=50x50&set=set1",
+		avatar: "/users/christabel.jpg",
 		email: "hspain2@nifty.com",
 	},
 	{
@@ -76,7 +73,7 @@ export const usersRows = [
 		username: "Ashton Snow",
 		status: "active",
 		transaction: "$120.00",
-		avatar: "https://robohash.org/rationeindistinctio.png?size=50x50&set=set1",
+		avatar: "/users/claudia.jpg",
 		email: "adymidowski3@etsy.com",
 	},
 	{
@@ -84,7 +81,7 @@ export const usersRows = [
 		username: "Meg Snow",
 		status: "active",
 		transaction: "$120.00",
-		avatar: "https://robohash.org/consequunturvelquasi.png?size=50x50&set=set1",
+		avatar: "/users/inspired.jpg",
 		email: "mwhittle4@chronoengine.com",
 	},
 	{
@@ -92,7 +89,7 @@ export const usersRows = [
 		username: "Joelynn Snow",
 		status: "active",
 		transaction: "$120.00",
-		avatar: "https://robohash.org/occaecatiiustoet.png?size=50x50&set=set1",
+		avatar: "/users/jason.jpg",
 		email: "jchrishop5@e-recht24.de",
 	},
 	{
@@ -100,8 +97,7 @@ export const usersRows = [
 		username: "Roberto Snow",
 		status: "active",
 		transaction: "$120.00",
-		avatar:
-			"https://robohash.org/suntrecusandaequibusdam.png?size=50x50&set=set1",
+		avatar: "/users/brian.jpg",
 		email: "rkonneke6@so-net.ne.jp",
 	},
 	{
@@ -109,7 +105,7 @@ export const usersRows = [
 		username: "Darin Snow",
 		status: "active",
 		transaction: "$120.00",
-		avatar: "https://robohash.org/quirerumomnis.png?size=50x50&set=set1",
+		avatar: "/users/christabel.jpg",
 		email: "docleary7@privacy.gov.au",
 	},
 	{
@@ -117,7 +113,7 @@ export const usersRows = [
 		username: "Deonne Snow",
 		status: "active",
 		transaction: "$120.00",
-		avatar: "https://robohash.org/porroetvoluptatem.png?size=50x50&set=set1",
+		avatar: "/users/claudia.jpg",
 		email: "dellerton8@about.me",
 	},
 	{
@@ -125,7 +121,7 @@ export const usersRows = [
 		username: "Frederigo Snow",
 		status: "active",
 		transaction: "$120.00",
-		avatar: "https://robohash.org/eteligendifacilis.png?size=50x50&set=set1",
+		avatar: "/users/jason.jpg",
 		email: "florent9@godaddy.com",
 	},
 ];

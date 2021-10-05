@@ -9,8 +9,9 @@ function UserList() {
 			<DataGrid
 				rows={usersRows}
 				columns={usersColumns}
-				pageSize={5}
-				rowsPerPageOptions={[5]}
+				disableSelectionOnClick
+				pageSize={10}
+				rowsPerPageOptions={[10]}
 				checkboxSelection
 			/>
 		</Div>
@@ -21,9 +22,11 @@ export default UserList;
 
 const Div = styled.div`
 	flex: 4;
-	padding: 20px 0;
+	padding: 25px 10px;
 
 	.userAvt {
+		width: 40px;
+		height: 40px;
 		object-fit: cover;
 		border-radius: 50%;
 		margin-right: 8px;
@@ -34,5 +37,13 @@ const Div = styled.div`
 		border-radius: 10px;
 		padding: 5px 10px;
 		background-color: #3bb077;
+		color: #fff;
+		cursor: pointer;
+		margin-right: 20px;
+	}
+
+	.userDeleteBtn {
+		color: red;
+		cursor: pointer;
 	}
 `;
