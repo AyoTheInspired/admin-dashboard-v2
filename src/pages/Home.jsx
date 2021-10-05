@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import FeaturedInfo from "../components/FeaturedInfo";
-import DataChart from "../components/DataChart";
 import { usersChartData } from "../app-data/users-chart-data";
 import SmallWidget from "../components/SmallWidget";
 import LargeWidget from "../components/LargeWidget";
+import DataChart from "../components/DataChart";
 
 function Home() {
 	return (

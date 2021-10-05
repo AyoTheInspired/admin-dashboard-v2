@@ -66,6 +66,10 @@ const Div = styled.div`
 			&.active {
 				background-color: rgba(240, 240, 250);
 			}
+
+			&.active:nth-child(5) {
+				background: green !important;
+			}
 		}
 	}
 `;
