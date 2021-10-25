@@ -7,6 +7,7 @@ import {
 	Publish,
 } from "@material-ui/icons";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function SingleUser() {
 	return (
@@ -14,7 +15,9 @@ function SingleUser() {
 			<div className="userTitleContainer flex-btw">
 				<h1 className="userTitle">Edit User</h1>
 
-				<button className="userAddButton">Create</button>
+				<Link to="/createUser">
+					<button className="userAddButton">Create</button>
+				</Link>
 			</div>
 
 			<div className="userContainer ">
