@@ -4,6 +4,7 @@ import {
 	LocationSearching,
 	PermIdentity,
 	PhoneAndroid,
+	Publish,
 } from "@material-ui/icons";
 import styled from "styled-components";
 
@@ -59,7 +60,63 @@ function SingleUser() {
 						</div>
 					</div>
 				</div>
-				<div className="userUpdate"></div>
+				<div className="userUpdate">
+					<span className="userUpdateTitle">Edit</span>
+
+					<form action="" className="userUpdateForm">
+						<div className="userFormLeft">
+							<div className="userUpdateItem">
+								<label>Username</label>
+								<input
+									type="text"
+									placeholder="ayotheinspired"
+									className="userUpdateInput"
+								/>
+							</div>
+							<div className="userUpdateItem">
+								<label>Email</label>
+								<input
+									type="text"
+									placeholder="ayoinspired@gmail.com"
+									className="userUpdateInput"
+								/>
+							</div>
+							<div className="userUpdateItem">
+								<label>Phone</label>
+								<input
+									type="text"
+									placeholder="08134327417"
+									className="userUpdateInput"
+								/>
+							</div>
+							<div className="userUpdateItem">
+								<label>Address</label>
+								<input
+									type="text"
+									placeholder="42, Campton Avenue, NY"
+									className="userUpdateInput"
+								/>
+							</div>
+						</div>
+						<div className="userFormRight">
+							<div className="userUpdateUpload">
+								<img
+									src="/users/ayo.jpg"
+									className="userUpdateImg"
+									alt="user"
+								/>
+
+								<label htmlFor="file">
+									{" "}
+									<Publish className="userUpdateIcon" />{" "}
+								</label>
+								<input type="file" style={{ display: "none" }} id="file" />
+							</div>
+
+							<button className="userUpdateButton">Update</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</Div>
 	);
@@ -70,6 +127,72 @@ export default SingleUser;
 const Div = styled.div`
 	flex: 4;
 	padding: 20px;
+
+	.userUpdateButton {
+		border-radius: 5px;
+		border: none;
+		padding: 5px;
+		cursor: pointer;
+		background-color: darkblue;
+		color: #fff;
+		font-weight: bold;
+	}
+
+	.userUpdateIcon {
+		cursor: pointer;
+	}
+
+	.userUpdateUpload {
+		display: flex;
+		align-items: center;
+	}
+
+	.userFormRight {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.userUpdateItem {
+		display: flex;
+		flex-direction: column;
+		margin-top: 10px;
+
+		label {
+			margin-bottom: 5px;
+			font-size: 14px;
+		}
+
+		input {
+			border: none;
+			width: 250px;
+			border-bottom: 1px solid gray;
+			height: 30px;
+
+			&:focus {
+				outline-width: 0;
+			}
+		}
+	}
+
+	.userUpdateTitle {
+		font-size: 24px;
+		font-weight: 600;
+	}
+
+	.userUpdateForm {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+	}
+
+	.userUpdateImg {
+		width: 100px;
+		height: 100px;
+		border-radius: 10px;
+		object-fit: cover;
+		margin-right: 20px;
+	}
 
 	.userShowInfo {
 		display: flex;
@@ -115,6 +238,7 @@ const Div = styled.div`
 
 		.userShowUsername {
 			font-weight: 600;
+			margin-bottom: 7px;
 		}
 
 		.userShowUserTitle {
