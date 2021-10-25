@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import UserList from "./pages/UserList";
 import SingleUser from "./pages/SingleUser";
 import CreateUser from "./pages/CreateUser";
+import ProductsList from "./pages/ProductsList";
 
 function App() {
 	return (
@@ -19,6 +20,7 @@ function App() {
 					<Route path="/users" exact component={UserList} />
 					<Route path="/users/:userId" exact component={SingleUser} />
 					<Route path="/createUser" exact component={CreateUser} />
+					<Route path="/products" exact component={ProductsList} />
 				</Switch>
 			</div>
 		</Router>

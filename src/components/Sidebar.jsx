@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { sidebarItems } from "../app-data/sidebar-items";
 
 function Sidebar() {
@@ -11,13 +12,15 @@ function Sidebar() {
 						<h3 className="sidebarTitle"> {title} </h3>
 						<ul className="sidebarList">
 							{subItems.map((subItem) => {
-								const { Icon, text, selected } = subItem;
+								const { Icon, text, selected, path } = subItem;
 								return (
-									<li
-										className={`${selected && "active"} sidebarListItem`}
-										key={text}>
-										<Icon className="sidebarIcon" /> {text}
-									</li>
+									<Link className="link" to={path && path}>
+										<li
+											className={`${selected && "active"} sidebarListItem`}
+											key={text}>
+											<Icon className="sidebarIcon" /> {text}
+										</li>
+									</Link>
 								);
 							})}
 						</ul>
@@ -36,6 +39,11 @@ const Div = styled.div`
 	position: sticky;
 	top: 50px;
 	background-color: rgba(251, 251, 255);
+
+	.link {
+		text-decoration: none;
+		color: inherit;
+	}
 
 	.sidebarWrapper {
 		padding: 20px;
