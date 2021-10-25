@@ -5,6 +5,7 @@ import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import UserList from "./pages/UserList";
+import SingleUser from "./pages/SingleUser";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 				<Switch>
 					<Route path="/" exact component={Home} />
 					<Route path="/users" exact component={UserList} />
+					<Route path="/users/:userId" exact component={SingleUser} />
 				</Switch>
 			</div>
 		</Router>
