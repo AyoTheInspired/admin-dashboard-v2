@@ -1,47 +1,7 @@
 import { DeleteOutline } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 
-export const usersColumns = [
-	{ field: "id", headerName: "ID", width: 90 },
-	{
-		field: "avatar",
-		headerName: "User",
-		renderCell: (params) => (
-			<div className="userAvtContaner flexed">
-				<img
-					src={params.row.avatar}
-					alt={params.row.username}
-					className="userAvt"
-				/>
-				{params.row.username}
-			</div>
-		),
-		width: 180,
-	},
-	{ field: "email", headerName: "Email", width: 230 },
-	{
-		field: "status",
-		headerName: "Status",
-		width: 120,
-	},
-	{
-		field: "transaction",
-		headerName: "Transaction Amount",
-		width: 200,
-	},
-
-	{
-		field: "action",
-		headerName: "Actions",
-		sortable: false,
-		width: 150,
-		renderCell: (params) => (
-			<div className="flex-btw">
-				<button className="userEditBtn">Edit</button>
-				<DeleteOutline className="userDeleteBtn" />
-			</div>
-		),
-	},
-];
+const handleDelete = (id) => {};
 
 export const usersRows = [
 	{
